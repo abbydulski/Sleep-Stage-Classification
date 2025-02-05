@@ -1,0 +1,57 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #4B0082, #00008B);
+    color: white;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    background: #6A0DAD;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background: #FFD700;
+    color: #4B0082;
+}
+
+/* Header */
+header {
+    padding: 40px 10px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+/* Section */
+section {
+    margin: 20px auto;
+    width: 80%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
