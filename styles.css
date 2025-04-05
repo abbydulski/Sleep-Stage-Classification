@@ -1,22 +1,22 @@
-/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #4B0082, #00008B);
-    color: white;
+    background: linear-gradient(to bottom, #e6e6fa, #dcdcff);
+    color: #333;
     text-align: center;
 }
 
-/* Navigation Bar */
 nav {
-    background: #6A0DAD;
+    background: #cbbcff;
     padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -25,33 +25,58 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #333;
     text-decoration: none;
     font-size: 18px;
     padding: 8px 16px;
-    border-radius: 5px;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
-    background: #FFD700;
-    color: #4B0082;
+    background: #f0e6ff;
+    color: #6c63ff;
 }
 
-/* Header */
 header {
     padding: 40px 10px;
-    background: rgba(255, 255, 255, 0.1);
-    margin: 20px auto;
-    width: 80%;
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    margin: 30px auto;
+    width: 85%;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
-/* Section */
+header h1 {
+    color: #6c63ff;
+    font-size: 2.5rem;
+}
+
 section {
-    margin: 20px auto;
-    width: 80%;
+    margin: 30px auto;
+    width: 85%;
+    padding: 30px 20px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+section h2 {
+    color: #6c63ff;
+    margin-bottom: 1rem;
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+footer {
     padding: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
+    font-size: 0.9rem;
+    color: #666;
+    background: #f8f8ff;
+    border-top: 1px solid #ddd;
 }
