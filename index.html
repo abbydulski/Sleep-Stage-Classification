@@ -22,15 +22,15 @@
       EOG, muscle activity through an EMG, heart rate through an ECG, and breathing and blood oxygen levels. This extreme procedure limits many from learning about their health through their 
       sleep. This model uses only data that can be collected through a standard wearable such as an Apple Watch or Samsung Galaxy Watch. It classifies a night of sleep through binary CNN classifiers
       by predicting for every second the probability that second is Wake, REM sleep, N1 sleep, N2 sleep, or N3 sleep. It then predicts sleep stage using those probabilities. In addition to the actual 
-      outputted predicted sleep stage for each second, this model gives valuable insight into a night of sleep by revealing patterns within the probabilities. See the section below regarding how to 
-      use the pipeline and run data from a night of sleep through it. This project is part of a Master's Thesis in the Fluid Interfaces group in the Media Lab at MIT. Please contact adulski@mit.edu
-      with any questions regarding the model or results. 
+      outputted predicted sleep stage for each second, this model gives valuable insight into a night of sleep by revealing patterns within the probabilities. See the graphic below for an example of what 
+      some of the outputted results look like. Finally, see the section below regarding how to use the pipeline and run data from a night of sleep through it. <br>
+      This project is part of a Master's Thesis in the Fluid Interfaces group in the Media Lab at MIT. Please contact adulski@mit.edu with any questions regarding the model or results. 
     </p>
     
     <!-- Image in About Section -->
     <img 
-      src="your-image.jpg" 
-      alt="Descriptive Alt Text" 
+      src="ResultsGraphic.png" 
+      alt="Predictive Probabilities by Sleep Stage and Sleep Hypnogram for Example Participant" 
       style="margin-top: 20px; max-width: 100%; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" 
     />
   </section>
@@ -39,17 +39,23 @@
   <section id="model">
     <h2>Using the Model</h2>
     <p>
-      Explain how your model works here. Describe the inputs, outputs, the interface (if any), 
-      and how someone could use it practically or reproduce your results.
+      To use the model, see the Colab here: <a href ="https://colab.research.google.com/drive/1QXLOxHtlYC0wWr1PUxjSWet2Va-rTQVN?usp=sharing">Click here to classify your data</a><br>
+      You will need to have a CSV file with data from a night of sleep that includes accelerometer data (X, Y, and Z axis), HR data, and temperature data. The pipeline walks you 
+      through step-by-step how to upload your file and run it through the classifiers to get the outputted sleep stages, probabilities graphic, sleep hypnogram, and more. The classifiers 
+      will be automatically uploaded to the colab through the GitHub here. 
     </p>
   </section>
 
-  <!-- Goals for the Future Section -->
+  <!-- Future Ideas Regarding the Model -->
   <section id="goals">
-    <h2>Goals for the Future</h2>
+    <h2>Future Ideas Regarding the Model</h2>
     <p>
-      Lay out your vision for the future. Will you add new features? Improve performance?
-      Expand to new datasets or applications? Talk about what's next!
+      This sleep classifier was made in attempt to make sleep-staging more accessible, as currently sleep-stage classification does not have much transparency and can be extremely intensive. 
+      This model also shows the possibility of learning about sleep through the lens of binary classification of every stage individually. Future research could include looking at what can be 
+      learned from studying the probability of a part of the night being REM sleep compared to the probability of it being N3 sleep, and what can be learned from the steepness in which these 
+      probabilities increase and decrease throughout the night. This could pave the way for a quick method to do an initial screening on a person's night of sleep. For instance, having high 
+      probabilities of wake late in the night or extremely inefficient and flat spikes of deep sleep could indicate some sort of sleep or health concern. This pipeline and classification method is 
+      open-source in hopes of improving sleep classification and accessibility for all!
     </p>
   </section>
 
